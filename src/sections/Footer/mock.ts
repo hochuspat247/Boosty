@@ -3,18 +3,18 @@ export const footerMock = {
     alt: 'BOOSTYFI',
   },
   links: [
-    {
-      text: 'Terms & Conditions',
-      href: '#terms',
-    },
-    {
-      text: 'Aml Policy',
-      href: '#aml',
-    },
-    {
-      text: 'Refund Policy',
-      href: '#refund',
-    },
+    // {
+    //   text: 'Terms & Conditions',
+    //   href: '#terms',
+    // },
+    // {
+    //   text: 'Aml Policy',
+    //   href: '#aml',
+    // },
+    // {
+    //   text: 'Refund Policy',
+    //   href: '#refund',
+    // },
   ],
   social: [
     {

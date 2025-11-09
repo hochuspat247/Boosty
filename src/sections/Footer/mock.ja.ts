@@ -3,18 +3,18 @@ export const footerMockJa = {
     alt: 'BOOSTYFI',
   },
   links: [
-    {
-      text: 'その他 利用規約',
-      href: '#terms',
-    },
-    {
-      text: 'AMLポリシー',
-      href: '#aml',
-    },
-    {
-      text: '返金ポリシー',
-      href: '#refund',
-    },
+    // {
+    //   text: 'その他 利用規約',
+    //   href: '#terms',
+    // },
+    // {
+    //   text: 'AMLポリシー',
+    //   href: '#aml',
+    // },
+    // {
+    //   text: '返金ポリシー',
+    //   href: '#refund',
+    // },
   ],
   social: [
     {
