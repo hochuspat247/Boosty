@@ -1,0 +1,15 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app__main {
+  flex: 1;
+}
+
+@media (max-width: 767px) {
+  .unified-mobile-bg {
+    background: #000000 url('/images/background-mobile.svg') center top / cover no-repeat;
+  }
+}
