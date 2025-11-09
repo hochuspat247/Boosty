@@ -1,129 +1,141 @@
-# Одностраничный лендинг на React + TypeScript
+# Boosty - Landing Page
 
-Современный одностраничный лендинг с модульной архитектурой, адаптивным дизайном и полной типизацией TypeScript.
+Modern React TypeScript landing page for Boosty platform with multi-language support (English and Japanese).
 
-## 🚀 Быстрый старт
+## Features
 
-### Установка зависимостей
+- 🎨 **Modern Design** - Clean and responsive design with smooth animations
+- 🌐 **Multi-language Support** - English and Japanese translations
+- 📱 **Fully Responsive** - Optimized for desktop, tablet, and mobile devices
+- ⚡ **Fast Performance** - Built with Vite for optimal performance
+- 🎯 **React Router** - Language-based routing (`/JAP` for Japanese version)
+- 🎭 **Smooth Animations** - Interactive elements with hover effects and transitions
 
+## Tech Stack
+
+- **React 19** - Latest React version
+- **TypeScript** - Type-safe development
+- **Vite** - Fast build tool and dev server
+- **React Router DOM** - Client-side routing
+- **CSS3** - Modern styling with animations
+
+## Project Structure
+
+```
+src/
+├── components/          # Reusable components
+│   └── Header/         # Site header with navigation
+├── sections/           # Page sections
+│   ├── Hero/           # Hero section
+│   ├── HowItWorks/     # How it works section
+│   ├── Advantages/     # Advantages section
+│   ├── Introduction/   # Introduction section
+│   ├── GetAtla/        # Get $ATLA section
+│   ├── ReferralCabinet/# Referral cabinet section
+│   ├── Pioners/        # Pioneers/Community section
+│   ├── Join/           # Join section
+│   └── Footer/         # Footer section
+├── hooks/              # Custom React hooks
+│   ├── useLanguage.ts  # Language detection hook
+│   └── useMocks.ts     # Mock data hook
+├── contexts/           # React contexts
+│   └── LanguageContext.tsx
+├── styles/             # Global styles
+└── types/             # TypeScript type definitions
+```
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v20.19.0 or higher recommended)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/hochuspat247/Boosty.git
+cd Boosty
+```
+
+2. Install dependencies:
 ```bash
 npm install
 ```
 
-### Запуск в режиме разработки
-
+3. Start the development server:
 ```bash
 npm run dev
 ```
 
-Приложение будет доступно по адресу `http://localhost:5173`
+4. Open your browser and navigate to:
+   - English version: `http://localhost:5173/`
+   - Japanese version: `http://localhost:5173/JAP`
 
-### Сборка для продакшена
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## Language Support
+
+The application supports two languages:
+
+- **English** (default) - Available at root path `/`
+- **Japanese** - Available at `/JAP` path
+
+Language detection is automatic based on the URL path. All text content is stored in mock files (`mock.ts` for English, `mock.ja.ts` for Japanese) within each section's folder.
+
+## Responsive Breakpoints
+
+- Desktop: 1024px and above
+- Tablet: 768px - 1023px
+- Mobile: 320px - 767px
+  - Small mobile: 320px - 375px
+  - Medium mobile: 375px - 425px
+  - Large mobile: 425px - 767px
+
+## Sections
+
+1. **Hero** - Main landing section with CTA button
+2. **How It Works** - Step-by-step guide
+3. **Advantages** - Key benefits and features
+4. **Introduction** - Platform introduction
+5. **Get $ATLA** - Token purchase section
+6. **Referral Cabinet** - Referral program details
+7. **Pioners** - Community testimonials
+8. **Join** - Registration section
+9. **Footer** - Site footer with links and social media
+
+## Deployment
+
+Build the project for production:
 
 ```bash
 npm run build
 ```
 
-### Предпросмотр продакшен сборки
+The `dist` folder will contain the production-ready files that can be deployed to any static hosting service.
 
-```bash
-npm run preview
-```
+## Contributing
 
-## 📁 Структура проекта
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-```
-src/
-├── components/      # Переиспользуемые компоненты
-│   ├── Button/      # Компонент кнопки
-│   ├── Header/      # Шапка сайта
-│   └── Footer/      # Подвал сайта
-├── sections/        # Секции лендинга (блоки)
-│   ├── Hero/        # Главный экран
-│   └── Features/    # Секция преимуществ
-├── styles/          # Глобальные стили
-│   ├── reset.css    # Сброс стилей браузера
-│   ├── variables.css # CSS переменные
-│   └── utils.css    # Утилитарные классы
-├── types/           # TypeScript типы
-│   └── index.ts
-├── App.tsx          # Главный компонент
-└── main.tsx         # Точка входа
-```
+## License
 
-## 📚 Документация
+This project is private and proprietary.
 
-Подробная документация по архитектуре проекта находится в файле [ARCHITECTURE.md](./ARCHITECTURE.md)
+## Contact
 
-### Основные разделы документации:
-
-- **Обзор архитектуры** - принципы построения проекта
-- **Структура проекта** - описание всех папок и файлов
-- **Компоненты** - описание переиспользуемых компонентов
-- **Секции** - описание блоков лендинга
-- **Стили** - система стилей и CSS переменные
-- **Типы** - TypeScript типы и интерфейсы
-- **Адаптивность** - брейкпоинты и подход к адаптивности
-- **Как добавить новый блок** - пошаговая инструкция
-
-## 🎨 Особенности
-
-- ✅ **Модульная архитектура** - компоненты и секции организованы по папкам
-- ✅ **TypeScript** - полная типизация всех компонентов
-- ✅ **Адаптивный дизайн** - Mobile-First подход с брейкпоинтами
-- ✅ **CSS переменные** - единая система стилей
-- ✅ **Переиспользуемые компоненты** - готовые UI элементы
-- ✅ **Утилитарные классы** - быстрая разработка
-
-## 🛠️ Технологии
-
-- **React 19** - библиотека для создания UI
-- **TypeScript** - типизированный JavaScript
-- **Vite** - быстрый сборщик и dev-сервер
-- **CSS3** - современные стили с переменными
-
-## 📱 Адаптивность
-
-Проект использует Mobile-First подход с следующими брейкпоинтами:
-
-- **Mobile**: до 767px
-- **Tablet**: 768px - 1023px
-- **Desktop**: от 1024px
-
-## 🧩 Доступные компоненты
-
-### Button
-Универсальная кнопка с вариантами стилей и размеров.
-
-### Header
-Шапка сайта с навигацией и мобильным меню.
-
-### Footer
-Подвал сайта с информацией и ссылками.
-
-## 📄 Доступные секции
-
-### Hero
-Главный экран лендинга с призывом к действию.
-
-### Features
-Секция с преимуществами или функциями продукта.
-
-## ➕ Добавление новых блоков
-
-Подробная инструкция по добавлению новых секций находится в [ARCHITECTURE.md](./ARCHITECTURE.md#-как-добавить-новый-блок)
-
-## 📝 Скрипты
-
-- `npm run dev` - запуск dev-сервера
-- `npm run build` - сборка для продакшена
-- `npm run preview` - предпросмотр продакшен сборки
-- `npm run lint` - проверка кода линтером
-
-## 📄 Лицензия
-
-MIT
+For questions or support, please contact the repository owner.
 
 ---
 
-**Приятной разработки! 🚀**
+Built with ❤️ using React and TypeScript
