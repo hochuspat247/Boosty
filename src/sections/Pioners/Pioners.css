@@ -268,7 +268,7 @@
     height: 600px;
     position: relative;
     z-index: 2;
-  }
+}
 
   .pioners__card-sphere {
     display: none;

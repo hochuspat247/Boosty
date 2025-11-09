@@ -248,14 +248,14 @@
     min-width: 0;
   }
 
-  .footer__links::before {
+  /* .footer__links::before {
     content: "Other";
     font-family: 'Archive', 'Archivo', sans-serif;
     font-size: 16px;
     font-weight: normal;
     color: white;
     margin-bottom: 0;
-  }
+  } */
 
   .footer__link {
     font-size: 16px;
