@@ -5,7 +5,9 @@ export const heroMockJa = {
     main: '収益化をカンタンに',
   },
   subtitle: {
-    accent: 'リアルな収入へ',
+    accent: '本当の収入を',
+    real: '得るための',
+    income: '道',
   },
   features: [
     {

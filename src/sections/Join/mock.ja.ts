@@ -1,6 +1,7 @@
 export const joinMockJa = {
   title: {
-    accent: '最初の一人に加われ',
+    text: '最初の一人に',
+    accent: 'なる',
   },
   subtitle: '登録して$ATLAを手に入れ、今日からボーナスを稼ぎ始めよう！',
   buttons: {
