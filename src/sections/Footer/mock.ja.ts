@@ -2,20 +2,21 @@ export const footerMockJa = {
   logo: {
     alt: 'BOOSTYFI',
   },
-  links: [
-    // {
-    //   text: 'その他 利用規約',
-    //   href: '#terms',
-    // },
-    // {
-    //   text: 'AMLポリシー',
-    //   href: '#aml',
-    // },
-    // {
-    //   text: '返金ポリシー',
-    //   href: '#refund',
-    // },
-  ],
+  links: [] as Array<{ text: string; href: string }>,
+  // links: [
+  //   {
+  //     text: 'その他 利用規約',
+  //     href: '#terms',
+  //   },
+  //   {
+  //     text: 'AMLポリシー',
+  //     href: '#aml',
+  //   },
+  //   {
+  //     text: '返金ポリシー',
+  //     href: '#refund',
+  //   },
+  // ],
   social: [
     {
       name: 'Instagram',

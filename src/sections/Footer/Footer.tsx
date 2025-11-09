@@ -37,11 +37,13 @@ const Footer: React.FC<FooterProps> = ({ id, className = '', onScrollToTop }) =>
           </div>
           
           <div className="footer__left">
-            <div className="footer__links">
-              {footerMock.links.map((link, index) => (
-                <a key={index} href={link.href} className="footer__link">{link.text}</a>
-              ))}
-            </div>
+            {footerMock.links.length > 0 && (
+              <div className="footer__links">
+                {footerMock.links.map((link, index) => (
+                  <a key={index} href={link.href} className="footer__link">{link.text}</a>
+                ))}
+              </div>
+            )}
             
             <button 
               className="footer__scroll-top footer__scroll-top--mobile"
