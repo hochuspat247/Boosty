@@ -128,7 +128,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: -100px;
 }
 
 .get-atla__hand-image {
@@ -153,26 +152,39 @@
 }
 
 .get-atla__sphere {
-  position: absolute;
-  right: 250px;
-  top: 75px;
-  width: 200px;
-  height: 200px;
-  background: radial-gradient(ellipse at 30% 30%, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.4) 30%, rgba(200, 200, 200, 0.3) 50%, rgba(150, 150, 150, 0.2) 70%, transparent 100%);
-  border-radius: 50%;
-  z-index: 0;
-  pointer-events: none;
-  filter: blur(2px);
+  display: none;
 }
 
-@media (max-width: 767px) {
-  .get-atla__sphere {
-    width: 150px;
-    height: 150px;
-    right: 60px;
-    top: 20px;
-    background: radial-gradient(ellipse at 30% 30%, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.5) 30%, rgba(200, 200, 200, 0.4) 50%, rgba(150, 150, 150, 0.3) 70%, transparent 100%);
-    filter: blur(1px);
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .get-atla__image-wrapper {
+    width: 429px;
+    height: 429px;
+    max-width: 429px;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1919px) {
+  .get-atla__image-wrapper {
+    width: 600px;
+    height: 600px;
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 1920px) and (max-width: 2559px) {
+  .get-atla__image-wrapper {
+    width: 700px;
+    height: 700px;
+    max-width: 700px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .get-atla__image-wrapper {
+    width: 800px;
+    height: 800px;
+    max-width: 800px;
   }
 }
 
@@ -214,7 +226,7 @@
 @media (max-width: 767px) {
   .get-atla {
     background: #000000;
-    padding: 0 0 var(--spacing-3xl) 0;
+    padding: var(--spacing-3xl) 0 var(--spacing-3xl) 0;
     position: relative;
     margin-top: 0;
     background-attachment: local;
@@ -230,7 +242,7 @@
 
   .get-atla__content {
     flex-direction: column;
-    gap: var(--spacing-xs);
+    gap: var(--spacing-2xl);
   }
 
   .get-atla__image-wrapper {
@@ -240,6 +252,7 @@
   .get-atla__text-content {
     order: 1;
     width: 100%;
+    margin-top: var(--spacing-xl);
   }
 
   .get-atla__subtitle {

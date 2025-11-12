@@ -88,7 +88,9 @@ const Pioners: React.FC<PionersProps> = ({ id, className = '' }) => {
               onTouchMove={handleTouchMove}
               onTouchEnd={handleTouchEnd}
             >
-              <img src={currentPioneer.image} alt={currentPioneer.name} className="pioners__card-image" />
+              <div className="pioners__card-image-wrapper">
+                <img src={currentPioneer.image} alt={currentPioneer.name} className="pioners__card-image" />
+              </div>
               
               <div className="pioners__card-content">
                 <div className="pioners__meta">

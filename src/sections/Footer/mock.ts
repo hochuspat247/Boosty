@@ -2,40 +2,20 @@ export const footerMock = {
   logo: {
     alt: 'BOOSTYFI',
   },
-  links: [] as Array<{ text: string; href: string }>,
-  // links: [
-  //   {
-  //     text: 'Terms & Conditions',
-  //     href: '#terms',
-  //   },
-  //   {
-  //     text: 'Aml Policy',
-  //     href: '#aml',
-  //   },
-  //   {
-  //     text: 'Refund Policy',
-  //     href: '#refund',
-  //   },
-  // ],
+  links: [
+    {
+      text: 'Privacy Policy',
+      href: 'https://docsend.com/view/zgzgqtmeq9zsywit',
+    },
+    {
+      text: 'Terms of Use',
+      href: 'https://docsend.com/view/u7zggui69xsuvqmp',
+    },
+  ],
   social: [
     {
-      name: 'Instagram',
-      href: 'https://www.instagram.com/blockchain.sports',
-      ariaLabel: 'Instagram',
-    },
-    {
-      name: 'Discord',
-      href: 'https://discord.gg/atleta',
-      ariaLabel: 'Discord',
-    },
-    {
-      name: 'X (Twitter)',
-      href: 'https://x.com/Atleta_Network',
-      ariaLabel: 'X (Twitter)',
-    },
-    {
       name: 'Telegram',
-      href: 'https://t.me/atleta_network',
+      href: 'https://t.me/boostyfi_platform',
       ariaLabel: 'Telegram',
     },
   ],

@@ -14,7 +14,7 @@ export const referralCabinetMockJa = {
   ],
   button: {
     text: 'パートナーになる',
-    url: 'https://boostyfi.com?ref=boostyfi_infl',
+    url: 'https://boostyfi.com/?ref=boostyfi_infl&utm_source=first&utm_medium=traf&utm_campaign=start_1',
   },
 };
 

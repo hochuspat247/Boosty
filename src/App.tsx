@@ -22,17 +22,17 @@ function App() {
 
       <main className="app__main">
         <Hero 
-          id="hero"
+          id="hero" 
         />
         
         <HowItWorks id="how-it-works" />
         
         <div className="unified-mobile-bg">
-          <Advantages id="advantages" />
-          
-          <Introduction 
-            id="introduction"
-          />
+        <Advantages id="advantages" />
+        
+        <Introduction 
+          id="introduction"
+        />
         </div>
         
         <GetAtla 

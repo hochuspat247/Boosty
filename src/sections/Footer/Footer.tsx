@@ -5,9 +5,6 @@ import { useMocks } from '../../hooks/useMocks';
 
 import logoImg from '/images/logo/logo.svg';
 import boostyfiFooterImg from '/images/boostyfi-footer.svg';
-import instaIcon from '/images/insta.svg';
-import diskIcon from '/images/disk.svg';
-import xIcon from '/images/X.svg';
 import telegramIcon from '/images/telegram.svg';
 import arrowUpIcon from '/images/arrow-up.svg';
 
@@ -26,8 +23,6 @@ const Footer: React.FC<FooterProps> = ({ id, className = '', onScrollToTop }) =>
     }
   };
 
-  const socialIcons = [instaIcon, diskIcon, xIcon, telegramIcon];
-
   return (
     <footer id={id || 'footer'} className={`footer section ${className}`}>
       <div className="container">
@@ -40,7 +35,15 @@ const Footer: React.FC<FooterProps> = ({ id, className = '', onScrollToTop }) =>
             {footerMock.links.length > 0 && (
               <div className="footer__links">
                 {footerMock.links.map((link, index) => (
-                  <a key={index} href={link.href} className="footer__link">{link.text}</a>
+                  <a 
+                    key={index} 
+                    href={link.href} 
+                    className="footer__link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {link.text}
+                  </a>
                 ))}
               </div>
             )}
@@ -64,7 +67,7 @@ const Footer: React.FC<FooterProps> = ({ id, className = '', onScrollToTop }) =>
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={socialIcons[index]} alt={social.name} />
+                <img src={telegramIcon} alt={social.name} />
               </a>
             ))}
           </div>

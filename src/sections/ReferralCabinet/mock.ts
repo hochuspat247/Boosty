@@ -14,7 +14,7 @@ export const referralCabinetMock = {
   ],
   button: {
     text: 'BECOME A PARTNER',
-    url: 'https://boostyfi.com?ref=boostyfi_infl',
+    url: 'https://boostyfi.com/?ref=boostyfi_infl&utm_source=first&utm_medium=traf&utm_campaign=start_1',
   },
 };
 

@@ -20,7 +20,6 @@ const HowItWorks: React.FC<HowItWorksProps> = ({ id, className = '' }) => {
             {howItWorksMock.steps.map((step, index) => (
               <div key={index} className="how-it-works__step">
                 <div className="how-it-works__step-box">
-                  <div className="how-it-works__step-number">{step.number}</div>
                   <img src={step.image} alt={`Step ${step.number}`} />
                   <p className="how-it-works__step-text">{step.text}</p>
                 </div>
